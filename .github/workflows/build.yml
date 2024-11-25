@@ -32,6 +32,7 @@ jobs:
         run: python today.py
       - name: Commit
         run: |-
+          git pull
           git add .
           git diff
           git config --global user.email "ktauchathuranga@gmail.com"
